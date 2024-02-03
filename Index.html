@@ -145,8 +145,8 @@
   button.style.cssText = `
     font-family: Arial;
     font-size: 16px;
-    color: #fff;
-    background-color: #333;
+    color: #000000;
+    background-color: #000000;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -154,7 +154,7 @@
     cursor: pointer;
   `;
   button.onclick = function() {
-    var link = prompt("Url?");
+    var link = prompt("Please enter a URL:");
     var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
     fetch(proxy + link)
       .then((response) => response.text())
@@ -224,7 +224,7 @@
   </head>
   <body>
     <div class="bottom-left">
-Tacogamerman on github
+Made by Tacogamerman and TheSeaHeight for 20 Piece
  </div>
   </body>
   
